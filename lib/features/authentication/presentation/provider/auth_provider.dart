@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../domain/user_entity.dart';
 
 class AuthProvider with ChangeNotifier {
   // Initialize repo from the data layer
@@ -9,7 +10,7 @@ class AuthProvider with ChangeNotifier {
   bool _userRegistered = false;
   String? _error;
   AuthProvider(this._repository);
-  //! THE FOLLOWING ARE GETTER METHODS TO GET 
+  //! THE FOLLOWING ARE GETTER METHODS TO GET
   // THIS VARIABLES IN OTHER CLASSES !
   bool get isLoading => _isLoading;
   bool get userRegistered => _userRegistered;
